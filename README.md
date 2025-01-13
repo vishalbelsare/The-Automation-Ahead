@@ -1,33 +1,50 @@
 # The Automation Ahead – Code Repository
 
-Welcome to the **The Automation Ahead** code repository, the companion resource for our series on the impact of generative AI (GenAI) in the investment industry. This series explores the latest advancements in automation tools, diving into how each can be applied in investment workflows to drive efficiency, innovation, and strategic insight.
+The **Automation Ahead** repository is the companion resource for the [Automation Ahead Content Series](https://rpc.cfainstitute.org/research/the-automation-ahead-content-series) by the [CFA Institute Research & Policy Center (RPC)](https://rpc.cfainstitute.org/). This series explores the transformative role of generative AI (GenAI) in the investment industry, providing actionable insights and practical tools to enhance efficiency and innovation in financial workflows.
 
-## About This Repository
+---
 
-Each installment in **The Automation Ahead** series focuses on a specific tool or technique transforming the field of investment. Here, you’ll find practical Python code examples from each article, designed to demonstrate real-world use cases for GenAI in tasks like data analysis, financial analysis, portfolio management, and more.
-
-## What’s Inside
-
-- **Python Code Examples**: Each folder includes Python scripts corresponding to the articles, offering hands-on applications of GenAI tools in investment contexts.
-- **Practical Use Cases**: Explore applications developed specifically for investment professionals, enabling you to test and assess GenAI’s practicality in real scenarios.
-
-## How to Use This Repository
+## 🔍 How to Use This Repository
 
 This repository is designed as a learning tool. We encourage you to:
 1. Explore the code examples to understand the specific applications of each GenAI tool.
 2. Experiment with modifying and adapting the scripts to fit your own use cases.
 3. Join us in pushing the industry forward by contributing your insights and improvements.
 
-## Collaboration & Community
+---
 
-We invite you to collaborate with us to identify and refine the most valuable use cases for GenAI in investment:
-- **Github**: Contribute to the codebase by sharing improvements or examples of additional use cases in this repository. For code specific discussions we encourage you to use the [Discussions tab](https://github.com/CFA-Institute-RPC/The-Automation-Ahead/discussions) in this repository.
-- **Discord**: [Join our community](https://discord.com/invite/zaHvJGSC) discussions to connect with peers, ask questions, and explore ideas together. 
+## 🌟What’s Inside
 
-By engaging with this repository, you’ll gain practical knowledge to help you assess GenAI’s potential in your workflows, positioning you at the forefront of investment automation.
-
-## License
-
-This repository is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
+- **Python Code Examples**: Each folder includes Python scripts corresponding to the articles, offering hands-on applications of GenAI tools in investment contexts.
+- **Practical Use Cases**: Explore applications developed specifically for investment professionals, enabling you to test and assess GenAI’s practicality in real scenarios.
 
 ---
+
+## 📚 About the Series
+
+The [Automation Ahead Content Series](https://rpc.cfainstitute.org/research/the-automation-ahead-content-series) includes:
+
+1. [Introduction and Automation Framework](https://rpc.cfainstitute.org/research/the-automation-ahead-content-series/introduction): Overview of automation opportunities in the investment industry.
+2. [Practical Guide for LLMs in the Financial Industry](https://rpc.cfainstitute.org/research/the-automation-ahead-content-series/practical-guide-for-llms-in-the-financial-industry): Hands-on insights into leveraging large language models (LLMs) for financial workflows.
+
+We invite you to suggest topics or tools you'd like to see covered in future installments by starting a discussion or opening an issue.
+
+---
+
+## 💬 Join the Community
+
+We encourage you to share your thoughts, feedback, and desires for the next installment of the series:
+
+- **GitHub Discussions**: [Start a conversation](https://github.com/CFA-Institute-RPC/The-Automation-Ahead/discussions) about tools or topics you'd like us to explore.
+- **Discord**: [Join our community server](https://discord.com/invite/zaHvJGSC) to collaborate and network in real time.
+
+---
+
+
+## 📜 License
+
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+**Explore, innovate, and lead the future of investment automation with us!**

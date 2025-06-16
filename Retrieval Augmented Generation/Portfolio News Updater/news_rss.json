@@ -1,0 +1,437 @@
+[
+    {
+        "source": "Bloomberg",
+        "type": "markets",
+        "rss": "https://feeds.bloomberg.com/markets/news.rss"
+    },
+    {
+        "source": "Bloomberg",
+        "type": "politics",
+        "rss": "https://feeds.bloomberg.com/politics/news.rss"
+    },
+    {
+        "source": "Bloomberg",
+        "type": "technology",
+        "rss": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+        "source": "Bloomberg",
+        "type": "news_json",
+        "rss": "https://feeds.bloomberg.com/news.json?ageHours=120&token=glassdoor%3Agd4bloomberg&tickers=NTRS%3AUS&callback=jQuery21306832818930041152_1513149004387"
+    },
+    {
+        "source": "Bloomberg",
+        "type": "opinion",
+        "rss": "https://feeds.bloomberg.com/bview/news.rss"
+    },
+    {
+        "source": "Bloomberg",
+        "type": "wealth",
+        "rss": "https://feeds.bloomberg.com/wealth/news.rss"
+    },
+    {
+        "source": "Bloomberg",
+        "type": "business",
+        "rss": "https://feeds.bloomberg.com/business/news.rss"
+    },
+    {
+        "source": "WSJ",
+        "type": "opinion",
+        "rss": "https://feeds.content.dowjones.io/public/rss/RSSOpinion"
+    },
+    {
+        "source": "WSJ",
+        "type": "world_news",
+        "rss": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+    },
+    {
+        "source": "WSJ",
+        "type": "us_business",
+        "rss": "https://feeds.content.dowjones.io/public/rss/WSJcomUSBusiness"
+    },
+    {
+        "source": "WSJ",
+        "type": "markets",
+        "rss": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+    },
+    {
+        "source": "WSJ",
+        "type": "technology",
+        "rss": "https://feeds.content.dowjones.io/public/rss/RSSWSJD"
+    },
+    {
+        "source": "WSJ",
+        "type": "economy",
+        "rss": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
+    },
+    {
+        "source": "WSJ",
+        "type": "politics",
+        "rss": "https://feeds.content.dowjones.io/public/rss/socialpoliticsfeed"
+    },
+    {
+        "source": "WSJ",
+        "type": "personal_finance",
+        "rss": "https://feeds.content.dowjones.io/public/rss/RSSPersonalFinance"
+    },
+    {
+        "source": "WSJ",
+        "type": "real_estate",
+        "rss": "https://feeds.content.dowjones.io/public/rss/latestnewsrealestate"
+    },
+    {
+        "source": "CNBC",
+        "type": "Top News",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"
+    },
+    {
+        "source": "CNBC",
+        "type": "World News",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362"
+    },
+    {
+        "source": "CNBC",
+        "type": "US News",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15837362"
+    },
+    {
+        "source": "CNBC",
+        "type": "Asia News",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19832390"
+    },
+    {
+        "source": "CNBC",
+        "type": "Europe News",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19794221"
+    },
+    {
+        "source": "CNBC",
+        "type": "Business",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10001147"
+    },
+    {
+        "source": "CNBC",
+        "type": "Earnings",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839135"
+    },
+    {
+        "source": "CNBC",
+        "type": "Commentary",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100370673"
+    },
+    {
+        "source": "CNBC",
+        "type": "Economy",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258"
+    },
+    {
+        "source": "CNBC",
+        "type": "Finance",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664"
+    },
+    {
+        "source": "CNBC",
+        "type": "Technology",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910"
+    },
+    {
+        "source": "CNBC",
+        "type": "Politics",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000113"
+    },
+    {
+        "source": "CNBC",
+        "type": "Health Care",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000108"
+    },
+    {
+        "source": "CNBC",
+        "type": "Real Estate",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000115"
+    },
+    {
+        "source": "CNBC",
+        "type": "Wealth",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10001054"
+    },
+    {
+        "source": "CNBC",
+        "type": "Autos",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000101"
+    },
+    {
+        "source": "CNBC",
+        "type": "Energy",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19836768"
+    },
+    {
+        "source": "CNBC",
+        "type": "Media",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000110"
+    },
+    {
+        "source": "CNBC",
+        "type": "Retail",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000116"
+    },
+    {
+        "source": "CNBC",
+        "type": "Travel",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000739"
+    },
+    {
+        "source": "CNBC",
+        "type": "Small Business",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=44877279"
+    },
+    {
+        "source": "CNBC",
+        "type": "Investing",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069"
+    },
+    {
+        "source": "CNBC",
+        "type": "Financial Advisors",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100646281"
+    },
+    {
+        "source": "CNBC",
+        "type": "Personal Finance",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=21324812"
+    },
+    {
+        "source": "CNBC",
+        "type": "Charting Asia",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=23103686"
+    },
+    {
+        "source": "CNBC",
+        "type": "Funny Business",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=17646093"
+    },
+    {
+        "source": "CNBC",
+        "type": "Market Insider",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20409666"
+    },
+    {
+        "source": "CNBC",
+        "type": "NetNet",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=38818154"
+    },
+    {
+        "source": "CNBC",
+        "type": "Trader Talk",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20398120"
+    },
+    {
+        "source": "CNBC",
+        "type": "Buffett Watch",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19206666"
+    },
+    {
+        "source": "CNBC",
+        "type": "Top Video",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839263"
+    },
+    {
+        "source": "CNBC",
+        "type": "Digital Workshop",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100616801"
+    },
+    {
+        "source": "CNBC",
+        "type": "Latest Video",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100004038"
+    },
+    {
+        "source": "CNBC",
+        "type": "CEO Interviews",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100004032"
+    },
+    {
+        "source": "CNBC",
+        "type": "Analyst Interviews",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100004033"
+    },
+    {
+        "source": "CNBC",
+        "type": "Must Watch",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=101014894"
+    },
+    {
+        "source": "CNBC",
+        "type": "Squawk Box",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838368"
+    },
+    {
+        "source": "CNBC",
+        "type": "Squawk on the Street",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838381"
+    },
+    {
+        "source": "CNBC",
+        "type": "Power Lunch",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838342"
+    },
+    {
+        "source": "CNBC",
+        "type": "Street Signs",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838408"
+    },
+    {
+        "source": "CNBC",
+        "type": "Options Action",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=28282083"
+    },
+    {
+        "source": "CNBC",
+        "type": "Closing Bell",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838421"
+    },
+    {
+        "source": "CNBC",
+        "type": "Fast Money",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838499"
+    },
+    {
+        "source": "CNBC",
+        "type": "Mad Money",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838459"
+    },
+    {
+        "source": "CNBC",
+        "type": "Kudlow Report",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838446"
+    },
+    {
+        "source": "CNBC",
+        "type": "Futures Now",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=48227449"
+    },
+    {
+        "source": "CNBC",
+        "type": "Suze Orman",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838523"
+    },
+    {
+        "source": "CNBC",
+        "type": "Capital Connection",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=17501773"
+    },
+    {
+        "source": "CNBC",
+        "type": "Squawk Box Europe",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838652"
+    },
+    {
+        "source": "CNBC",
+        "type": "Worldwide Exchange",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838355"
+    },
+    {
+        "source": "CNBC",
+        "type": "Squawk Box Asia",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15838831"
+    },
+    {
+        "source": "CNBC",
+        "type": "The Call",
+        "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=37447855"
+    },
+    {
+        "source": "Financial Times",
+        "type": "world",
+        "rss": "https://www.ft.com/world?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "uk",
+        "rss": "https://www.ft.com/world-uk?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "us",
+        "rss": "https://www.ft.com/us?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "china",
+        "rss": "https://www.ft.com/china?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "asia_pacific",
+        "rss": "https://www.ft.com/asia-pacific?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "emerging_markets",
+        "rss": "https://www.ft.com/emerging-markets?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "europe",
+        "rss": "https://www.ft.com/europe?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "markets",
+        "rss": "https://www.ft.com/markets?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "equities",
+        "rss": "https://www.ft.com/equities?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "fund_management",
+        "rss": "https://www.ft.com/fund-management?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "currencies",
+        "rss": "https://www.ft.com/currencies?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "commodities",
+        "rss": "https://www.ft.com/commodities?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "crypto",
+        "rss": "https://www.ft.com/crypto?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "technology",
+        "rss": "https://www.ft.com/technology?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "companies",
+        "rss": "https://www.ft.com/companies?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "energy",
+        "rss": "https://www.ft.com/energy?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "financials",
+        "rss": "https://www.ft.com/financials?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "moral_money",
+        "rss": "https://www.ft.com/moral-money?format=rss"
+    },
+    {
+        "source": "Financial Times",
+        "type": "lex",
+        "rss": "https://www.ft.com/lex?format=rss"
+    }
+]

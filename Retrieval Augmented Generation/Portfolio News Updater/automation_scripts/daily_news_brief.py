@@ -21,7 +21,7 @@ from email.message import EmailMessage
 import markdown as md
 
 
-def load_rss_feeds(path: str = 'news_rss.json') -> list:
+def load_rss_feeds(path: str = '../news_rss.json') -> list:
     with open(path, 'r') as f:
         return json.load(f)
 
@@ -109,7 +109,7 @@ def summarize_ticker(rag_chain, ticker: str) -> str:
 
 
 def build_rag_chain(store):
-    llm = ChatOpenAI(model='gpt-4.1-mini')
+    llm = ChatOpenAI(model='gpt-4.1')
     prompt = ChatPromptTemplate.from_messages([
         ('system', make_system_prompt()),
         ('human', '{input}')

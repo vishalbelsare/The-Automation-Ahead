@@ -99,8 +99,12 @@ def make_system_prompt():
 
 def summarize_ticker(rag_chain, ticker: str) -> str:
     today = datetime.today().strftime('%Y-%m-%d')
-    info = yf.Ticker(ticker).info
-    name = info.get('longName', ticker)
+    try:
+        ticker_obj = yf.Ticker(ticker)
+        info = ticker_obj.info
+    except Exception:
+        info = {}
+    name = info.get('longName') or getattr(ticker_obj.fast_info, 'name', ticker)
     desc = info.get('longBusinessSummary', '')
     query = (
         f"Today's date is {today}. Only reference news published today. "

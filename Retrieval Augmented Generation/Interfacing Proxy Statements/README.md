@@ -1,16 +1,16 @@
-Interfacing Proxy Statements – Case Study
+# Interfacing Proxy Statements – Case Study
 
 This folder contains a case study showing how Retrieval-Augmented Generation (RAG) can be used to extract and summarize insights from pdf proxy statements.
 
 If you’re curious about how RAG can help with navigating long, complex filings—this is a good place to start.
 
-Get Started
+## Get Started
 
 Open the Jupyter notebook: Interfacing Proxy Statements – Case Study.ipynb
 
 ### Key Takeaways
 
-By the end of this notebook, you will be familiar with:
+## By the end of this notebook, you will be familiar with:
 
 - **Building a RAG Workflow**  
   Learn how to construct a basic Retrieval-Augmented Generation pipeline for extracting structured data from complex financial documents.

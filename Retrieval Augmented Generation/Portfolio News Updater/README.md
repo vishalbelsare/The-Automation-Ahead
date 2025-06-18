@@ -1,16 +1,16 @@
-Daily Portfolio News Updater – Case Study
+# Daily Portfolio News Updater – Case Study
 
 This folder contains a simple, replicable workflow that uses Retrieval-Augmented Generation (RAG) to deliver daily, ticker-specific news summaries for your investment portfolio.
 
 If you’re looking for a lightweight way to stay on top of material news across your holdings, this notebook gives you a nice start.
 
-Get Started
+## Get Started
 
 Open the Jupyter notebook: News Updater.ipynb
 
 The notebook walks through how to build an AI-powered news briefing system that pulls fresh articles from financial news sources, matches them to your portfolio tickers, and produces a concise summary.
 
-Key Takeaways
+## Key Takeaways
 
 By the end of this notebook, you’ll learn how to:
 	•	Build a News Aggregator with RAG

@@ -5,6 +5,7 @@ import feedparser
 from dotenv import load_dotenv
 from datetime import datetime
 from openai import OpenAI
+from pathlib import Path
 
 # LangChain & OpenAI imports
 from langchain.vectorstores import Chroma
@@ -20,8 +21,10 @@ import smtplib
 from email.message import EmailMessage
 import markdown as md
 
+here = Path(__file__)
+rss_feeds_path = here.parent.parent / 'news_rss.json'
 
-def load_rss_feeds(path: str = '../news_rss.json') -> list:
+def load_rss_feeds(path: str = rss_feeds_path) -> list:
     with open(path, 'r') as f:
         return json.load(f)
 

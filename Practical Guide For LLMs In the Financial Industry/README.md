@@ -15,7 +15,7 @@ This repository contains tutorials on how to run small and large language models
 
 ### **3. FinLLM Comparison Table**
 - A table comparing financial language models to general-purpose language models.
-- **Reference**: See the article [Practical Guide for LLMs in the Finance Industry](https://rpc.cfainstitute.org/research/the-automation-ahead-content-series/practical-guide-for-llms) for detailed insights.
+- **Reference**: See the article [Practical Guide for LLMs in the Finance Industry](https://rpc.cfainstitute.org/research/the-automation-ahead-content-series/practical-guide-for-llms-in-the-financial-industry) for detailed insights.
 
 ---
 

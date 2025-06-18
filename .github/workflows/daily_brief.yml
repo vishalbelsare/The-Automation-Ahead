@@ -1,27 +1,30 @@
 name: Daily Brief
 on:
   schedule:
-    - cron: '0 7 * * *'   # runs every day at 07:00 UTC
+    - cron: '0 7 * * *'
   workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Which environment?'
-        required: false
-        default: 'production'
+
 jobs:
   run-brief:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      - run: pip install -r Retrieval \Augmented \Generation/Portfolio \News \Updater/automation_scripts/requirements.txt
-      - run: python Retrieval \Augmented \Generation/Portfolio \News \Updater/automation_scripts/daily_news_brief.py
+
+      - name: Install dependencies
+        run: |
+          pip install -r "Retrieval Augmented Generation/Portfolio News Updater/automation_scripts/requirements.txt"
+
+      - name: Run the news brief
+        run: |
+          python "Retrieval Augmented Generation/Portfolio News Updater/automation_scripts/daily_news_brief.py"
         env:
-          YAHOO_EMAIL: ${{ secrets.YAHOO_EMAIL }}
+          YAHOO_EMAIL:        ${{ secrets.YAHOO_EMAIL }}
           YAHOO_APP_PASSWORD: ${{ secrets.YAHOO_APP_PASSWORD }}
-          TO_EMAIL: ${{ secrets.TO_EMAIL }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          PORTFOLIO: ${{ vars.PORTFOLIO }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TO_EMAIL:           ${{ secrets.TO_EMAIL }}
+          OPENAI_API_KEY:     ${{ secrets.OPENAI_API_KEY }}
+          PORTFOLIO:          ${{ vars.PORTFOLIO }}
+          GITHUB_TOKEN:       ${{ secrets.GITHUB_TOKEN }}

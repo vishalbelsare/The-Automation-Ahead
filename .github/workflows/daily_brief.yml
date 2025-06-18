@@ -16,8 +16,8 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      - run: pip install -r Retrieval Augmented Generation/Portfolio News Updater/automation_scripts/requirements.txt
-      - run: python Retrieval Augmented Generation/Portfolio News Updater/automation_scripts/daily_news_brief.py
+      - run: pip install -r Retrieval \Augmented \Generation/Portfolio \News \Updater/automation_scripts/requirements.txt
+      - run: python Retrieval \Augmented \Generation/Portfolio \News \Updater/automation_scripts/daily_news_brief.py
         env:
           YAHOO_EMAIL: ${{ secrets.YAHOO_EMAIL }}
           YAHOO_APP_PASSWORD: ${{ secrets.YAHOO_APP_PASSWORD }}

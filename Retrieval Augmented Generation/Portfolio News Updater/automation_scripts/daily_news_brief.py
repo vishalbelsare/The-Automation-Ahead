@@ -99,22 +99,12 @@ def make_system_prompt():
 
 def summarize_ticker(rag_chain, ticker: str) -> str:
     today = datetime.today().strftime('%Y-%m-%d')
+    name, desc = ticker, ''
     try:
-        print(f"Attempting to fetch data for {ticker}")
-        ticker_obj = yf.Ticker(ticker)
-        info = ticker_obj.info
-        print(f"Successfully fetched data for {ticker}")
+        fast = yf.Ticker(ticker).fast_info      # <- fast_info not quoteSummary
+        name = fast.get('shortName') or ticker
     except Exception as e:
-        print(f"Failed to fetch data for {ticker}: {type(e).__name__}: {e}")
-        info = {}
-    
-    if info:
-        name = info.get('longName', ticker)
-        desc = info.get('longBusinessSummary', '')
-        
-    else:
-        name = ticker
-        desc = 'Not Available'
+        print(f"⚠️  fast_info failed for {ticker}: {e}")
     
     query = (
         f"Today's date is {today}. You MUST only reference news published either today or yesterday. News published any other day is unacceptable!\n\n"

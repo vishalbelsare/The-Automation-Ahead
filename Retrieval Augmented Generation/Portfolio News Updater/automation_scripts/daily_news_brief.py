@@ -8,7 +8,7 @@ from openai import OpenAI
 from pathlib import Path
 
 # LangChain & OpenAI imports
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -100,12 +100,22 @@ def make_system_prompt():
 def summarize_ticker(rag_chain, ticker: str) -> str:
     today = datetime.today().strftime('%Y-%m-%d')
     try:
+        print(f"Attempting to fetch data for {ticker}")
         ticker_obj = yf.Ticker(ticker)
         info = ticker_obj.info
-    except Exception:
+        print(f"Successfully fetched data for {ticker}")
+    except Exception as e:
+        print(f"Failed to fetch data for {ticker}: {type(e).__name__}: {e}")
         info = {}
-    name = info.get('longName') or getattr(ticker_obj.fast_info, 'name', ticker)
-    desc = info.get('longBusinessSummary', '')
+    
+    if info:
+        name = info.get('longName', ticker)
+        desc = info.get('longBusinessSummary', '')
+        
+    else:
+        name = ticker
+        desc = 'Not Available'
+    
     query = (
         f"Today's date is {today}. You MUST only reference news published either today or yesterday. News published any other day is unacceptable!\n\n"
         f"Here is a description of {name}: {desc}\n\n"
@@ -131,10 +141,20 @@ def create_portfolio_brief(summaries: list, client) -> str:
     from langchain_core.documents import Document
     docs = [Document(page_content=s, metadata={'ticker': s.split('–')[0]}) for s in summaries]
     prompt = (
-        f"""Use your expert ability to sythesize the following portfolio stock news briefs \
-     to extract material information related to all stocks in the portfolio. Output your answer \
-     in markdown format (not a markdown codebox). Make sure you provide in-context citations for articles that back up your highlights. \
-     Here are the news briefs: {str(docs)}"""
+        f"""You are a financial analyst and expert Markdown formatter.
+
+        Your task is to synthesize the following stock-specific news briefs into a structured, markdown-formatted report. Focus only on **material information** relevant to the portfolio.
+
+        **Instructions:**
+        - Structure the output using **headings** for each portfolio stock (e.g., ## AAPL).
+        - Under each stock, use **bullet points** for each insight.
+        - Use your expert financial skill to determine what actually has a high probability to be material and only highlight those stories. Be selective!
+        - Povide a clear explaination below the news on why the news could materially affect the stock - what are the potential outcomes? 
+        - Add **in-context citations** (e.g., (Source: Bloomberg, June 14)) to back up each point.
+        - Do **not** wrap the output in code blocks.
+        - Do **not** include commentary or filler—just structured insights.
+
+        Here are the news briefs: {str(docs)}"""
     )
     comp = client.chat.completions.create(
         model='gpt-4.1',

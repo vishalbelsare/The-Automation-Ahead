@@ -164,7 +164,7 @@ def send_email(subject: str, body_md: str):
     html = md.markdown(body_md)
     msg.set_content('HTML only', subtype='plain')
     msg.add_alternative(html, subtype='html')
-    with smtplib.SMTP('smtp.mail.yahoo.com', 465) as s:
+    with smtplib.SMTP('smtp.mail.yahoo.com', 587) as s:
         s.starttls()
         s.login(user, pwd)
         s.send_message(msg)
